@@ -1,0 +1,65 @@
+/**
+* Field reset Methode.
+*/
+
+public void reset(int i1x1, int i2x1, int i3x1, int i4x1, int i1x2, int i2x2, int i3x2, int i4x2, int i1x3, int i2x3, int i3x3, int i4x3, int i1x4, int i2x4, int i3x4, int i4x4) {
+        this.i1x1 = i1x1;
+        this.i2x1 = i2x1;
+        this.i3x1 = i3x1;
+        this.i4x1 = i4x1;
+
+        this.i1x2 = i1x2;
+        this.i2x2 = i2x2;
+        this.i3x2 = i3x2;
+        this.i4x2 = i4x2;
+
+        this.i1x3 = i1x3;
+        this.i2x3 = i2x3;
+        this.i3x3 = i3x3;
+        this.i4x3 = i4x3;
+
+        this.i1x4 = i1x4;
+        this.i2x4 = i2x4;
+        this.i3x4 = i3x4;
+        this.i4x4 = i4x4;
+
+        labelHashMap.get("1").setText(String.valueOf(this.i1x1));
+        labelHashMap.get("2").setText(String.valueOf(this.i2x1));
+        labelHashMap.get("3").setText(String.valueOf(this.i3x1));
+        labelHashMap.get("4").setText(String.valueOf(this.i4x1));
+
+        labelHashMap.get("5").setText(String.valueOf(this.i1x2));
+        labelHashMap.get("6").setText(String.valueOf(this.i2x2));
+        labelHashMap.get("7").setText(String.valueOf(this.i3x2));
+        labelHashMap.get("8").setText(String.valueOf(this.i4x2));
+
+        labelHashMap.get("9").setText(String.valueOf(this.i1x3));
+        labelHashMap.get("10").setText(String.valueOf(this.i2x3));
+        labelHashMap.get("11").setText(String.valueOf(this.i3x3));
+        labelHashMap.get("12").setText(String.valueOf(this.i4x3));
+
+        labelHashMap.get("13").setText(String.valueOf(this.i1x4));
+        labelHashMap.get("14").setText(String.valueOf(this.i2x4));
+        labelHashMap.get("15").setText(String.valueOf(this.i3x4));
+        labelHashMap.get("16").setText(String.valueOf(this.i4x4));
+
+        newField(i1x1, "#464B5D", "#84ffff", l1x1, 0, 0, "");
+        newField(i2x1, "#84ffff", "#464B5D", l2x1, 1, 0, "");
+        newField(i3x1, "#464B5D", "#84ffff", l3x1, 2, 0, "");
+        newField(i4x1, "#84ffff", "#464B5D", l4x1, 3, 0, "");
+
+        newField(i1x2, "#84ffff", "#464B5D", l1x2, 0, 1, "");
+        newField(i2x2, "#464B5D", "#84ffff", l2x2, 1, 1, "");
+        newField(i3x2, "#84ffff", "#464B5D", l3x2, 2, 1, "");
+        newField(i4x2, "#464B5D", "#84ffff", l4x2, 3, 1, "");
+
+        newField(i1x3, "#464B5D", "#84ffff", l1x3, 0, 2, "");
+        newField(i2x3, "#84ffff", "#464B5D", l2x3, 1, 2, "");
+        newField(i3x3, "#464B5D", "#84ffff", l3x3, 2, 2, "");
+        newField(i4x3, "#84ffff", "#464B5D", l4x3, 3, 2, "");
+
+        newField(i1x4, "#84ffff", "#464B5D", l1x4, 0, 3, "");
+        newField(i2x4, "#464B5D", "#84ffff", l2x4, 1, 3, "");
+        newField(i3x4, "#84ffff", "#464B5D", l3x4, 2, 3, "");
+        newField(i4x4, "#464B5D", "#84ffff", l4x4, 3, 3, "");
+    }

@@ -1,0 +1,122 @@
+/**
+* To Do
+* - let the charels go over in one another // a little time between each move
+* - the instance variables are uneeded
+* - in one version 16 and 32 are the same color
+* - a many colored and light version
+* - end notificaiton
+* - fields corners rounding
+* - so that you can open and use it like a normal app without intelliJ // viedeo dazu in chrome "Java" Ordner
+* - objektorientiert machen
+*/
+
+/**
+* Fields are numbered from the top left to the bottom right
+*/
+
+/**
+* Colors1
+if (numericalValue == 0) {
+            backgroundColor = "#1A2025";
+            foregroundColor =  backgroundColor;
+        }else if(numericalValue == 2){
+            backgroundColor = "#17323E";
+            foregroundColor = "#FFFFFF";
+        }else if(numericalValue == 4){
+            backgroundColor = "#0F4149";
+            foregroundColor = "#FFFFFF";
+        }else if(numericalValue == 8){
+            backgroundColor = "#024D55";
+            foregroundColor = "#FFFFFF";
+        }else if(numericalValue == 16){
+            backgroundColor = "#075758";
+            foregroundColor = "#FFFFFF";
+        }else if(numericalValue == 32){
+            backgroundColor = "#075758";
+            foregroundColor = "#000000";
+        }else if(numericalValue == 64){
+            backgroundColor = "#216F72";
+            foregroundColor = "#000000";
+        }else if(numericalValue == 128){
+            backgroundColor = "#057D7E";
+            foregroundColor = "#000000";
+        }else if(numericalValue == 256){
+            backgroundColor = "#179997";
+            foregroundColor = "#000000";
+        }else if(numericalValue == 512){
+            backgroundColor = "#58B2A5";
+            foregroundColor = "000000";
+        }else if(numericalValue == 1024){
+            backgroundColor = "#6AC1B8";
+            foregroundColor = "#000000";
+        }else if(numericalValue == 2048){
+            backgroundColor = "#91CEC6";
+            foregroundColor = "#000000";
+        }else if(numericalValue == 4096){
+            backgroundColor = "#8D2E4E2";
+            foregroundColor = "#000000";
+        }
+*Colors2
+if (numericalValue == 0) {
+            backgroundColor = "#1A2025";
+            foregroundColor =  backgroundColor;
+        }else if(numericalValue == 2){
+            backgroundColor = "#17042F";
+            foregroundColor = "#FFFFFF";
+        }else if(numericalValue == 4){
+            backgroundColor = "#1C1056";
+            foregroundColor = "#FFFFFF";
+        }else if(numericalValue == 8){
+            backgroundColor = "#172173";
+            foregroundColor = "#FFFFFF";
+        }else if(numericalValue == 16){
+            backgroundColor = "#0F346B";
+            foregroundColor = "#FFFFFF";
+        }else if(numericalValue == 32){
+            backgroundColor = "#084763";
+            foregroundColor = "#000000";
+        }else if(numericalValue == 64){
+            backgroundColor = "#0A6166";
+            foregroundColor = "#000000";
+        }else if(numericalValue == 128){
+            backgroundColor = "#11A19F";
+            foregroundColor = "#000000";
+        }else if(numericalValue == 256){
+            backgroundColor = "#4ED0A8";
+            foregroundColor = "#000000";
+        }else if(numericalValue == 512){
+            backgroundColor = "#86F39D";
+            foregroundColor = "000000";
+        }else if(numericalValue == 1024){
+            backgroundColor = "#BDF287";
+            foregroundColor = "#000000";
+        }else if(numericalValue == 2048){
+            backgroundColor = "#F6EB47";
+            foregroundColor = "#000000";
+        }else if(numericalValue == 4096){
+            backgroundColor = "#FFFBE5";
+            foregroundColor = "#000000";
+        }
+*/
+
+/**
+* Action Listener
+button1.addActionListener(this);
+        button2.addActionListener(this);
+        button3.addActionListener(this);
+*
+public void actionPerformed (ActionEvent ae){
+        // Die Quelle wird mit getSource() abgefragt und mit den
+        // Buttons abgeglichen. Wenn die Quelle des ActionEvents einer
+        // der Buttons ist, wird der Text des JLabels entsprechend geändert
+        if(ae.getSource() == this.button1){
+            label.setText(("Button 1 wurde betätigt"));
+        }
+        else if(ae.getSource() == this.button2){
+            label.setText("Button 2 wurde betätigt");
+        }
+        else if (ae.getSource() == this.button3){
+            label.setText(("Button 3 wurde betätigt"));
+        }
+    }
+*/
