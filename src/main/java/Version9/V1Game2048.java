@@ -56,7 +56,7 @@ public class V1Game2048 extends JFrame implements AWTEventListener {
         integerSpur();
 
         setVisible(true);
-        setResizable(false);
+        setResizable(true);
     }
     public void initComponents() {
         l1 = new JLabel("0");
