@@ -1,17 +1,25 @@
 
-import Version9.V1Game2048;
+import WindowsAndFrames.MainFrame;
+import WindowsAndFrames.MainWindow;
 import com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatMaterialOceanicIJTheme;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class Main {
 
-    public static void main(String[] args) throws UnsupportedLookAndFeelException {
+    public static void main(String[] args) throws UnsupportedLookAndFeelException, IOException {
+        ArrayList<String> getraenke = new ArrayList<>();
+        getraenke.add("Cola");
+        getraenke.add("Fanta");
+        getraenke.add("Orangen Saft");
+        getraenke.add("Sauerkraut Saft");
+
 
         FlatMaterialOceanicIJTheme.setup();
         UIManager.setLookAndFeel(new FlatMaterialOceanicIJTheme());
-        V1Game2048 v1Game2048 = new V1Game2048("2048");
-        Toolkit.getDefaultToolkit().addAWTEventListener(v1Game2048, AWTEvent.KEY_EVENT_MASK);
+        new MainFrame(getraenke);
     }
 }
